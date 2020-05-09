@@ -39,36 +39,6 @@
 </template>
 <script>
 export default {
-  data () {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'mdi-home',
-          subItems: [
-            {
-              title: 'Dashboard',
-              to: '/'
-            },
-            {
-              title: 'About',
-              to: '/about'
-            }
-          ]
-        },
-        {
-          title: 'Account',
-          icon: 'mdi-account',
-          active: true,
-          subItems: [
-            {
-              title: 'Dashboard',
-              to: '/'
-            }
-          ]
-        }
-      ]
-    }
-  }
+  props: ['items']
 }
 </script>
