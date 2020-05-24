@@ -28,3 +28,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 firebase deploy --only database
 ```
+
+### firebase config
+
+```
+firebase functions:config:set admin.email=my_email admin.db_url=db_url
+firebase functions:config:get
+firebase deploy --only functions
+```
+
