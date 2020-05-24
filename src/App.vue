@@ -6,6 +6,7 @@
         :title="site.title"
       />
       <v-spacer/>
+      <site-sign />
     </v-app-bar>
     <v-navigation-drawer app v-model="drawer" width="400">
       <site-menu
@@ -28,12 +29,15 @@
 import SiteTitle from '@/views/site/title'
 import SiteFooter from '@/views/site/footer'
 import SiteMenu from '@/views/site/menu'
+import SiteSign from '@/views/site/sign'
 
 export default {
   components: {
     SiteTitle,
     SiteFooter,
-    SiteMenu
+    SiteMenu,
+    SiteSign
+
   },
   name: 'App',
   data () {
